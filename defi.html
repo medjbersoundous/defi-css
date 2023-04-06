@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="defi.css">
+    <title>Defi css</title>
+</head>
+<body>
+    <main>
+        <div class="inscription">
+
+            <h1>Bienvenue chez sport</h1>
+            
+            <p>Voici le formulaire d'inscription a remplir, certaines informations serviront a vous fournir 
+                la meilleur experience possible 
+            </p>
+        </div>
+        <div id="welcome">
+            <div>WELCOME</div>
+        </div>
+    
+        <div >
+           
+            <input type="text"  placeholder="First name " required><br>
+            <input type="text"   placeholder="Last name" required><br>
+        </div>
+        
+        <div>
+             <input type="email" placeholder="email" required><br>
+             <input type="number" placeholder="Phone number " required><br>
+        </div>
+
+        <div class="pays">
+
+                <input type="text" list="suggestions" placeholder="Country of residence" required>
+                <datalist id="suggestions">
+                    <option value="Algiers">
+                    <option value="Belgique">
+                    <option value="Canada">
+                    <option value="Qatar">
+                    <option value="Germany">
+                </datalist><br>
+        </div>
+        <div >
+                <input type="password"  placeholder="password" required><br>
+                <input type="password"  placeholder="confirm password" required ><br>
+
+        </div>
+        <div class="objectif">
+
+           <h2>choisissez votre objectif</h2>
+           <div class="prise">
+
+               <label >Prise de masse</label>
+               <input type="radio"  name="objectif" value="prise-masse">
+            </div>
+            <div class="prise">
+                <label >Perte de poids</label>
+                <input type="radio" name="objectif" value="perte-poids">
+            </div>
+        </div>
+
+        <div class="taill">
+            <h2>Votre taille:</h2>
+            <div class="votre">
+
+                <input type="range" id="Taille" name="taille" min="80" max="250" step="1"><br>
+                <span id="tailles"></span>
+            </div>
+        </div>
+        <div class="taill">
+
+            <h2>Votre poids</h2>
+            <div class="votre">
+
+                <input type="range" id="poids" name="poids" min="40" max="150" step="1"><br>
+                <span id="poid"></span>
+            </div>
+        </div>
+      <div class="programme"> 
+
+          <h2>choisissez votre programme </h2>
+          <div class="programme">
+              <select id="programme" name="programme" required>
+                <optgroup label="service de base">
+                    <option >debutant </option>
+                    <option >acces toute les salles</option>
+                    <option >acces + conseils</option>
+                  </optgroup>
+                  <optgroup label="premium">
+                      <option >avec coach</option>
+                      <option >avec coach + nutrition</option>
+                  </optgroup>
+                </select><br>
+            </div>
+        </div>
+      
+        <div class="guide">
+            <h2>telecharger le guide gratuit</h2>
+            <a href="">ici </a>
+        </div>
+        
+        <div class="inscrire">
+            <label >J'accepte les conditions d'utilisation</label><br>
+            <input type="checkbox"  required>
+        </div>
+        <input type="submit" value="je m'inscrire" class="button">
+      
+    </main>
+      
+      <script src="defi.js"></script>
+    
+      
+    
+    
+      
+</body>
+</html>

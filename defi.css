@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+body{
+    text-align: center;
+    background-image: url(gym.webp)  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    color: white;
+}
+div{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+div input, select{
+    margin: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    border-style: none dotted solid  dotted ;
+    border-width: 3px;
+    border-color: green;
+    width: 200px; 
+}
+.pays{
+    display: flex;
+    justify-content: center;
+}
+.objectif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.objectif input, .inscrire input{
+    width: 20px;
+    
+}
+.taill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.programme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.guide a{
+    margin-left: 5px;
+    color: red;
+}
+.inscription{
+    display: flex;
+    flex-direction: column;
+}
+.inscription h1{
+    font-family: "Alkatra" ;
+    font-size: 50px;
+}
+.inscription p{
+    font-size: 20px;
+    font-family: inherit;
+}
+.inscrire, .prise, .votre{
+    align-items: center;
+   
+}
+input[type=checkbox] {
+    accent-color: green;
+  }
+  
+  input[type=radio] {
+    accent-color: red;
+  }
+  
+  .button {
+    background: red;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards ;
+    animation-iteration-count: infinite ;
+    border: none;
+    cursor: progress ;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    width: 100px; 
+  }
+  
+  @keyframes mymove {
+    from {background-color: red;}
+    to { background-color: green;}
+  }
+
+  #welcome {
+    position:absolute;
+    width:600px;
+    height:30px;
+    left:50%;
+    top:16%;
+    margin-left:-300px;
+    overflow:visible;
+    cursor:default;
+  }
+  
+  #welcome div {
+    position:absolute;
+    width:20px;
+    height:36px;
+    font-family:"Alkatra";
+    font-size: 40px;
+    animation:move 3s linear infinite;
+    -o-animation:move 3s linear infinite;
+    -moz-animation:move 3s linear infinite;
+    -webkit-animation:move 3s linear infinite;
+    animation-iteration-count: 1;
+    color: white;
+  }
+  
+ 
+
+  
+  @keyframes move {
+    0% {
+      left:-20%;
+      opacity:0;
+    }
+      40% {
+          left: 48.3%; 
+          opacity:1;
+      }
+      
+  }
+
+  
+  
+  
